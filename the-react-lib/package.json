@@ -8,26 +8,22 @@
     "tsdoc-metadata.json"
   ],
   "license": "MIT",
-  "main": "./dist/the-react-lib.umd.js",
-  "module": "./dist/the-react-lib.es.js",
+  "type": "module",
   "typings": "./index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/the-react-lib.es.js",
-      "require": "./dist/the-react-lib.umd.js"
-    }
+  "exports": "./dist/index.es.js",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "scripts": {
     "prepare": "husky install",
-    "pre-commit": "tsc && lint-staged",
+    "pre-commit": "tsc && lint-staged && pnpm lint",
+    "lint": "eslint --max-warnings=0 src/**/*.{ts,tsx}",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,yml,css,scss,md}'",
     "format:check": "prettier --check '**/*.{js,jsx,ts,tsx,json,yml,css,scss,md}'",
     "test": "jest",
-    "dev": "vite",
     "build:dts": "api-extractor run --local --verbose && prettier --write index.d.ts",
     "build": "tsc && vite build && pnpm build:dts",
-    "prepublishOnly": "pnpm build",
-    "serve": "vite preview"
+    "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7",
@@ -37,10 +33,12 @@
     "@testing-library/react-hooks": "^7",
     "@testing-library/user-event": "^13",
     "@types/jest": "^27",
-    "@types/node": "^16",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@vitejs/plugin-react": "^1.0.0",
+    "@types/node": "^17",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
+    "@vitejs/plugin-react": "^1",
+    "eslint": "^8",
+    "eslint-config-react-app": "^7",
     "husky": "^7",
     "jest": "^27",
     "lint-staged": "^12",

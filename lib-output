@@ -1,5 +1,5 @@
-- 
-✔  +! 14 files added
+⠋ ✔  +! 15 files added
+ -> /the-lib/.eslintrc.yml
  -> /the-lib/.lintstagedrc.yml
  -> /the-lib/.prettierignore
  -> /the-lib/.prettierrc.yml
@@ -14,4 +14,13 @@
  -> /the-lib/src/index.ts
  -> /the-lib/src/the-lib.test.ts
  -> /the-lib/src/the-lib.ts
-- 
+⠋ ✔  -> 
+
+Done. Now run:
+
+  cd the-lib
+  git init; git add .; git commit -m "initial commit"
+  pnpm install
+  pnpm build
+
+⠋ 

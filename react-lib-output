@@ -1,5 +1,5 @@
-- 
-✔  +! 14 files added
+⠋ ✔  +! 15 files added
+ -> /the-react-lib/.eslintrc.yml
  -> /the-react-lib/.lintstagedrc.yml
  -> /the-react-lib/.prettierignore
  -> /the-react-lib/.prettierrc.yml
@@ -14,4 +14,13 @@
  -> /the-react-lib/src/index.ts
  -> /the-react-lib/src/TheReactLib.test.tsx
  -> /the-react-lib/src/TheReactLib.tsx
-- 
+⠋ ✔  -> 
+
+Done. Now run:
+
+  cd the-react-lib
+  git init; git add .; git commit -m "initial commit"
+  pnpm install
+  pnpm build
+
+⠋ 
