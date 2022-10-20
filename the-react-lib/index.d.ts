@@ -1,9 +1,9 @@
-import { PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 
 export declare function TheReactLib(props: TheReactLibProps): JSX.Element;
 
-declare interface TheReactLibOwnProps {}
-
-export declare type TheReactLibProps = PropsWithChildren<TheReactLibOwnProps>;
+export declare interface TheReactLibProps {
+  children?: ReactNode;
+}
 
 export {};

@@ -1,8 +1,8 @@
-import React, { PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 
-interface TheReactLibOwnProps {}
-
-export type TheReactLibProps = PropsWithChildren<TheReactLibOwnProps>;
+export interface TheReactLibProps {
+  children?: ReactNode;
+}
 
 export function TheReactLib(props: TheReactLibProps) {
   return <span>the-react-lib</span>;
