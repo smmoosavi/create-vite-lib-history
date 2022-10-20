@@ -1,0 +1,17 @@
+- 
+✔  +! 14 files added
+ -> /the-lib/.lintstagedrc.yml
+ -> /the-lib/.prettierignore
+ -> /the-lib/.prettierrc.yml
+ -> /the-lib/api-extractor.json
+ -> /the-lib/index.d.ts
+ -> /the-lib/jest.config.js
+ -> /the-lib/package.json
+ -> /the-lib/tsconfig.json
+ -> /the-lib/vite.config.ts
+ -> /the-lib/.gitignore
+ -> /the-lib/.husky/pre-commit
+ -> /the-lib/src/index.ts
+ -> /the-lib/src/the-lib.test.ts
+ -> /the-lib/src/the-lib.ts
+- 
