@@ -5,13 +5,13 @@
  -> /the-react-lib/.prettierrc.yml
  -> /the-react-lib/api-extractor.json
  -> /the-react-lib/index.d.ts
- -> /the-react-lib/jest.config.js
  -> /the-react-lib/package.json
  -> /the-react-lib/tsconfig.json
  -> /the-react-lib/vite.config.ts
  -> /the-react-lib/.gitignore
  -> /the-react-lib/.husky/pre-commit
  -> /the-react-lib/src/index.ts
+ -> /the-react-lib/src/setup-test.ts
  -> /the-react-lib/src/TheReactLib.test.tsx
  -> /the-react-lib/src/TheReactLib.tsx
 ⠋ ✔  -> 

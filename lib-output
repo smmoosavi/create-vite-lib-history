@@ -1,11 +1,10 @@
-⠋ ✔  +! 15 files added
+⠋ ✔  +! 14 files added
  -> /the-lib/.eslintrc.yml
  -> /the-lib/.lintstagedrc.yml
  -> /the-lib/.prettierignore
  -> /the-lib/.prettierrc.yml
  -> /the-lib/api-extractor.json
  -> /the-lib/index.d.ts
- -> /the-lib/jest.config.js
  -> /the-lib/package.json
  -> /the-lib/tsconfig.json
  -> /the-lib/vite.config.ts

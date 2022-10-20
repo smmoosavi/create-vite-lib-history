@@ -1,9 +1,10 @@
-import { render } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
+import { render, screen } from '@testing-library/react';
 import { TheReactLib } from './TheReactLib';
 
 describe('TheReactLib', () => {
   it('renders correctly', () => {
-    const { container } = render(<TheReactLib />);
-    expect(container.textContent).toBe('the-react-lib');
+    render(<TheReactLib />);
+    expect(screen.getByText('the-react-lib')).toBeInTheDocument();
   });
 });
