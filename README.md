@@ -4,20 +4,22 @@ This repository contains sample projects created with [create-vite-lib](https://
 
 for each version of create-vite-lib, there is a commit in this repository.
 
+- [`284e198`][284e198] create-vite-lib v0.8.1
 - [`e39b969`][e39b969] create-vite-lib v0.8.0
-- [`79b175c`][79b175c] create-vite-lib v0.7.0
-- [`35a5e91`][35a5e91] create-vite-lib v0.6.0
-- [`74316e1`][74316e1] create-vite-lib v0.5.0
-- [`60b6109`][60b6109] create-vite-lib v0.4.0
-- [`53c2868`][53c2868] create-vite-lib v0.3.0
+- [`79b175c`][79b175c] create-vite-lib v0.7.0 (`vite@5`, `vitest@1`)
+- [`35a5e91`][35a5e91] create-vite-lib v0.6.0 (`vitest@0.33`)
+- [`74316e1`][74316e1] create-vite-lib v0.5.0 (`vite@4`, `vitest@0.28`)
+- [`60b6109`][60b6109] create-vite-lib v0.4.0 (`vitest@0.23`)
+- [`53c2868`][53c2868] create-vite-lib v0.3.0 (`vite@3`, `+vitest@0.18`)
 - [`e783677`][e783677] create-vite-lib v0.2.2
 - [`662f6d7`][662f6d7] create-vite-lib v0.2.1
 - [`6af7fd8`][6af7fd8] create-vite-lib v0.2.0
 - [`6e06ea8`][6e06ea8] create-vite-lib v0.1.3
 - [`de9a26e`][de9a26e] create-vite-lib v0.1.2
 - [`197b0a9`][197b0a9] create-vite-lib v0.1.1
-- [`e7930f5`][e7930f5] create-vite-lib v0.1.0
+- [`e7930f5`][e7930f5] create-vite-lib v0.1.0 (`vite@2`)
 
+[284e198]: https://github.com/smmoosavi/create-vite-lib-history/commit/284e19803080ad82ec082d4e10ae910a9b195f27
 [e39b969]: https://github.com/smmoosavi/create-vite-lib-history/commit/e39b96931dba3af33d69bd5e02d5e83dbec1b6f3
 [79b175c]: https://github.com/smmoosavi/create-vite-lib-history/commit/79b175cc3da6468cdc6545de101e449766b1a844
 [35a5e91]: https://github.com/smmoosavi/create-vite-lib-history/commit/35a5e91545ad0036d74be74590f21beee52deed0
