@@ -1,0 +1,11 @@
+create-vite@6.5.0
+
+│
+◇  Scaffolding project in ./the-vite-app...
+│
+└  Done. Now run:
+
+  cd the-vite-app
+  pnpm install
+  pnpm run dev
+
