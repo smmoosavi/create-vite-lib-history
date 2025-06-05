@@ -1,11 +1,24 @@
 create-vite@6.5.0
 
+--- vanilla-ts ---
+
 │
-◇  Scaffolding project in ./the-vite-app...
+◇  Scaffolding project in ./vite-vanilla-app...
 │
 └  Done. Now run:
 
-  cd the-vite-app
+  cd vite-vanilla-app
+  pnpm install
+  pnpm run dev
+
+--- react-ts ---
+
+│
+◇  Scaffolding project in ./vite-react-app...
+│
+└  Done. Now run:
+
+  cd vite-react-app
   pnpm install
   pnpm run dev
 
