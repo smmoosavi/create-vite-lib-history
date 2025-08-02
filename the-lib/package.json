@@ -19,9 +19,6 @@
       "import": "./dist/index.js"
     }
   },
-  "engines": {
-    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
-  },
   "scripts": {
     "prepare": "husky",
     "pre-commit": "tsc && lint-staged && pnpm lint",
@@ -36,16 +33,16 @@
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7",
-    "@types/node": "^20",
-    "@vitest/coverage-istanbul": "^1",
+    "@types/node": "^22",
+    "@vitest/coverage-istanbul": "^3",
     "eslint": "^8",
     "eslint-config-react-app": "^7",
     "husky": "^9",
-    "lint-staged": "^15",
+    "lint-staged": "^16",
     "prettier": "^3",
     "typescript": "^5",
-    "vite": "^5",
-    "vite-plugin-dts": "^3",
-    "vitest": "^1"
+    "vite": "^7",
+    "vite-plugin-dts": "^4",
+    "vitest": "^3"
   }
 }
