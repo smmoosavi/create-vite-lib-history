@@ -13,9 +13,9 @@ echo "create-vite@$(pnpm info create-vite version )\n" | tee vite-app-output
 
 # template-vanilla-ts
 echo "--- vanilla-ts ---\n" | tee -a vite-app-output
-pnpm create vite vite-vanilla-app --template vanilla-ts 2>&1 | sed "s|${PARENT_DIR}|.|g" | tee -a vite-app-output
+pnpm create vite vite-vanilla-app --no-interactive --template vanilla-ts 2>&1 | sed "s|${PARENT_DIR}|.|g" | tee -a vite-app-output
 
 # template-react-ts
 echo "--- react-ts ---\n" | tee -a vite-app-output
-pnpm create vite vite-react-app --template react-ts 2>&1 |  sed "s|${PARENT_DIR}|.|g" |tee -a vite-app-output
+pnpm create vite vite-react-app --no-interactive --template react-ts 2>&1 |  sed "s|${PARENT_DIR}|.|g" |tee -a vite-app-output
 
