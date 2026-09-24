@@ -4,45 +4,46 @@
   "files": [
     "src",
     "dist",
-    "index.d.ts",
-    "tsdoc-metadata.json"
+    "index.d.ts"
   ],
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=22.22.2"
+  },
   "typings": "./index.d.ts",
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
   "exports": {
     ".": {
       "types": "./index.d.ts",
-      "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     }
   },
   "scripts": {
     "prepare": "husky",
     "pre-commit": "tsc && lint-staged && pnpm lint",
-    "lint": "eslint --max-warnings=0 src/**/*.{ts,tsx}",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,yml,css,scss,md}'",
     "format:check": "prettier --check '**/*.{js,jsx,ts,tsx,json,yml,css,scss,md}'",
+    "lint": "oxlint --deny-warnings src",
+    "type:check": "tsc --noEmit",
     "test": "vitest --run --coverage",
     "test:watch": "vitest",
-    "build:dts": "api-extractor run --local --verbose && prettier --write index.d.ts",
-    "build": "tsc && vite build && pnpm build:dts",
+    "check": "pnpm format:check && pnpm lint && pnpm type:check && pnpm test",
+    "build": "pnpm type:check && vite build && prettier --write index.d.ts",
     "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7",
-    "@types/node": "^22",
-    "@vitest/coverage-istanbul": "^3",
-    "eslint": "^8",
-    "eslint-config-react-app": "^7",
+    "@types/node": "^24",
+    "@vitest/coverage-istanbul": "^5",
     "husky": "^9",
-    "lint-staged": "^16",
+    "lint-staged": "^17",
+    "oxlint": "^1",
     "prettier": "^3",
-    "typescript": "^5",
-    "vite": "^7",
-    "vite-plugin-dts": "^4",
-    "vitest": "^3"
+    "typescript": "^6",
+    "unplugin-dts": "^1",
+    "vite": "^8",
+    "vitest": "^5"
   }
 }

@@ -1,8 +1,8 @@
 /// <reference types="vitest" />
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
-import packageJson from './package.json';
+import dts from 'unplugin-dts/vite';
+import packageJson from './package.json' with { type: 'json' };
 
 const dependencies = [
   ...Object.keys(packageJson.dependencies ?? {}),
@@ -14,7 +14,7 @@ let external = (source: string) =>
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [dts({ outDir: resolve(__dirname, './.cache/dts') })],
+  plugins: [dts({ bundleTypes: true, strictOutput: false })],
   test: {
     coverage: {
       reporter: ['clover', 'json', 'lcov', 'text'],
@@ -23,8 +23,8 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: [resolve(__dirname, 'src/index.ts')],
-      formats: ['es', 'cjs'],
+      entry: [resolve(import.meta.dirname, 'src/index.ts')],
+      formats: ['es'],
     },
     rollupOptions: {
       external,
